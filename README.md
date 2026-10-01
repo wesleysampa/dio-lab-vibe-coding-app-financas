@@ -1,89 +1,143 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# ConversaFin - App de Organizacao de Financas Pessoais
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+## Prompt Final (PRD)
 
-## ✨ O que é Vibe Coding
+O PRD abaixo foi o prompt principal utilizado com a IA (Lovable) para gerar o conceito e as telas do aplicativo.
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+```text
+# PRD - App para Organizacao de Financas Pessoais ConversaFin!
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+## 1. Contexto e Visao Geral
+O produto e um aplicativo de organizacao de financas pessoais focado em simplicidade, operado por meio de conversas em linguagem natural. Ele elimina a necessidade de formularios manuais extensos ou planilhas complexas. O objetivo e tornar a gestao financeira acessivel, simples e engajadora para todos os usuarios.
 
-## 🎯 Desafio
+## 2. Problema
+- Aplicativos tradicionais exigem entrada manual excessiva e burocratica.
+- Falta de personalizacao e experiencia engessada.
+- Usuarios iniciantes desistem rapidamente do controle financeiro por conta da complexidade.
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+## 3. Publico-Alvo
+- Pessoas que desejam comecar a organizar suas financas de forma pratica e sem complicacao.
+- Principalmente iniciantes que buscam simplicidade, orientacao visual e pouca burocracia.
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+## 4. Funcionalidades-Chave (Escopo do MVP)
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+### 0. Autenticacao de Usuario
+- Tela de login e cadastro com e-mail e senha.
+- Cada usuario possui seus proprios dados financeiros.
+- Sessao persistente e opcao de logout no header.
+- Dados isolados por usuario, garantindo privacidade.
 
-## 🪄 Etapas do Desafio
+### 1. Registro via Chat
+- Insercao de gastos e receitas em linguagem natural por texto (exemplo: "Gastei R$ 50 no mercado", "Recebi meu salario de R$ 3000").
+- Interpretacao dinamica dos valores e intencao do usuario.
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+### 2. Classificacao e Criacao Automatica de Categorias
+- Identificacao e categorizacao automatica das transacoes sem esforco manual.
+- Logica de Autocadastro: caso a categoria nao exista, o app cria automaticamente e vincula a transacao.
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+### 3. Metas Financeiras
+- Criacao e acompanhamento visual de objetivos de economia (exemplo: "Economizar R$ 500 para emergencia").
+- Indicadores de progresso simples e diretos.
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+### 4. Agente Financeiro
+- Recomendacoes personalizadas e dicas automaticas de economia enviadas no proprio fluxo de conversa com base nos gastos registrados.
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+### 5. Relatorios Simples
+- Visualizacoes acessiveis e personalizadas (cards de resumo de receitas, despesas e saldo, alem de relatorios visuais simplificados).
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+### 6. Design Universal
+- Interface projetada para oferecer uma otima experiencia para o maximo de usuarios possivel, independentemente de idade, nivel de habilidade digital ou necessidades especificas.
+- Elementos com alto contraste, fontes legiveis, botoes amplos e suporte a navegacao intuitiva.
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+## 5. Diretrizes de Design, Layout e Paleta de Cores
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+### Paleta de Cores
+- Cor Primaria: Verde Esmeralda (#22C55E).
+- Fundo Geral: Cinza Claro Neutro (#F8FAFC).
+- Cards: Branco (#FFFFFF) com bordas suaves em cinza (#E2E8F0).
+- Receita: Verde (#22C55E).
+- Despesa: Vermelho (#EF4444).
+- Texto Principal: Grafite (#1E293B).
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
+### Estrutura Visual
+1. Tela de Login: formulario com e-mail e senha, botao de entrar e link para cadastro.
+2. Dashboard Integrado: header com titulo e saudacao, 3 cards de resumo, chat e painel de metas.
+3. Tela de Relatorios: cards filtrados por periodo, graficos e extrato.
+
+## 6. Entregavel da IA (Estrutura do MVP)
+
+### Telas e Componentes
+- Tela de Autenticacao (Login e Cadastro).
+- Chat de Interacao Conversacional.
+- Dashboard Misto (Cards de Metricas + Painel de Metas).
+- Tela de Relatorios Visuais Simplificados.
+
+### Recursos Tecnicos
+- Autenticacao de usuarios com e-mail e senha.
+- Persistencia de dados por usuario.
+- Processamento de Linguagem Natural (NLP).
+- Motor de categorizacao automatica com adicao dinamica de categorias.
+- Acessibilidade e usabilidade universal (WCAG 2.1 AA).
+
+## 7. Plano de Validacao Inicial
+- Testes com grupo piloto focado em usuarios iniciantes e perfis variados.
+- Coleta de feedback sobre a clareza da conversa, utilidade das recomendacoes e acessibilidade do layout.
 ```
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+## Imagens das Interacoes com a IA
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+### Tela de Login
 
-### 2. Explorando o Lovable na Prática
+![Tela de login do ConversaFin](login.png)
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+Tela inicial onde o usuario faz login ou cria uma conta com e-mail e senha.
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+### Dashboard Principal
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+![Dashboard com cards de resumo, chat e metas](dashboard.png)
 
-### 3. Entregando o Desafio na DIO
+Apos o login, o usuario visualiza seus cards de resumo, o chat do Assistente Financeiro e o painel de metas.
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+### Interacao no Chat com a IA
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+![Interacao com o Assistente Financeiro](chat.png)
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+Usuario registra gastos e receitas via linguagem natural. A IA interpreta, categoriza e responde com dicas de economia personalizadas.
 
-## 💬 Conclusão
+### Tela de Relatorios
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+![Relatorios visuais simplificados](relatorios.png)
+
+Cards de resumo filtrados por periodo, grafico de despesas por categoria, comparacao entre receitas e despesas e extrato de transacoes.
+
+## Resumo do Conceito do App
+
+O ConversaFin e um aplicativo de organizacao de financas pessoais focado em simplicidade. Em vez de formularios manuais ou planilhas complexas, o usuario interage com o sistema por meio de conversas em linguagem natural.
+
+O aplicativo possui autenticacao de usuario, garantindo que cada pessoa tenha seus proprios dados financeiros isolados. Apos o login, o usuario pode registrar gastos e receitas por chat, criar metas financeiras, receber dicas automaticas de economia e visualizar relatorios simples com filtros por periodo.
+
+O design foi pensado para ser universal: alto contraste, fontes legiveis, botoes amplos e navegacao intuitiva, garantindo boa experiencia para o maior numero possivel de usuarios.
+
+## Reflexao sobre o Processo
+
+### O que funcionou bem?
+
+- O PRD detalhado, usado como primeiro prompt no Lovable, gerou uma estrutura de interface proxima do resultado esperado, com dashboard, chat e painel de metas.
+- A descricao clara das cores, do layout e das funcionalidades no PRD reduziu a necessidade de correcoes posteriores.
+- O uso do Design Universal como requisito desde o inicio garantiu uma interface consistente e acessivel.
+- A integracao nativa do Lovable com o Supabase facilitou a implementacao da autenticacao e do banco de dados.
+
+### O que nao funcionou como o esperado?
+
+- O primeiro prompt nao cobriu todos os detalhes das funcionalidades. Foi necessario iterar com prompts adicionais.
+- A compreensao de frases informais, sem valores explicitos em reais, exigiu refinamento das instrucoes dadas a IA.
+- Algumas funcionalidades, como a exclusao de metas, o botao de zerar dados e a persistencia do historico do chat, precisaram ser solicitadas separadamente.
+- Ajustes finos na autenticacao (redirecionamento e persistencia de sessao) exigiram prompts especificos.
+
+### O que aprendi sobre conversar com IAs?
+
+- Contexto e fundamental. Um prompt de sistema claro, com regras e exemplos, e mais eficaz do que varios comandos soltos.
+- A iteracao e parte natural do processo. O primeiro prompt raramente gera o resultado final; testar e refinar e essencial.
+- Exemplos concretos de entrada e saida ajudam a IA a entender o comportamento esperado melhor do que descricoes abstratas.
+- Definir limites para a IA (o que ela nao deve fazer) evita respostas incorretas ou inventadas.
+- O Vibe Coding, na pratica, e uma habilidade de conversa. Quanto melhor a descricao, mais proximo o resultado.
