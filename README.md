@@ -1,5 +1,7 @@
 # ConversaFin - App de Organizacao de Financas Pessoais
 
+### App Finanças: https://conversa-fin-buddy.lovable.app/login
+
 ## Prompt Final (PRD)
 
 O PRD abaixo foi o prompt principal utilizado com a IA (Lovable) para gerar o conceito e as telas do aplicativo.
